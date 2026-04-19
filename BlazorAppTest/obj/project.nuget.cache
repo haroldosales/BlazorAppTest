@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cv76v0/lqnI=",
+  "success": true,
+  "projectFilePath": "/home/hatroldo/Documents/Dev/BlazorAppTest/BlazorAppTest/BlazorAppTest.csproj",
+  "expectedPackageFiles": [
+    "/home/hatroldo/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.4/microsoft.aspnetcore.app.internal.assets.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
