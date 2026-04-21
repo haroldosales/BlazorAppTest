@@ -83,3 +83,4 @@
 /home/hatroldo/Documents/Dev/BlazorAppTest/BlazorAppTest/obj/Debug/net10.0/BlazorAppTest.pdb
 /home/hatroldo/Documents/Dev/BlazorAppTest/BlazorAppTest/obj/Debug/net10.0/BlazorAppTest.genruntimeconfig.cache
 /home/hatroldo/Documents/Dev/BlazorAppTest/BlazorAppTest/obj/Debug/net10.0/ref/BlazorAppTest.dll
+/home/hatroldo/Documents/Dev/BlazorAppTest/BlazorAppTest/obj/Debug/net10.0/BlazorAppTest.sourcelink.json
