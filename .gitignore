@@ -1,0 +1,41 @@
+# Build and compilation
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+*.a
+
+# Playwright
+.playwright/
+node_modules/
+
+# Dependencies and packages
+*.nupkg
+.nuget/
+packages/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sln.iml
+*.vs
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment
+appsettings.Development.json
+
+# Misc
+*.log
+*.tmp
+*.cache
+.env
