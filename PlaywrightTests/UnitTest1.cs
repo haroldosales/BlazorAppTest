@@ -11,7 +11,7 @@ namespace PlaywrightTests;
 public class Test : PageTest
 {
     [Test]
-    public async Task HasTitle()
+    public async Task TitleVisible()
     {
         await Page.GotoAsync("http://localhost:5000/");
 
@@ -20,7 +20,7 @@ public class Test : PageTest
     }
 
     [Test]
-    public async Task GetStartedLink()
+    public async Task RedirectWeather()
     {
         await Page.GotoAsync("http://localhost:5000/");
 
@@ -33,7 +33,7 @@ public class Test : PageTest
 
 
     [Test]
-    public async Task Menu()
+    public async Task MenuVisible()
     {
         await Page.GotoAsync("http://localhost:5000/");
 
@@ -41,12 +41,14 @@ public class Test : PageTest
         var menuButton = Page.GetByText("Home");
         var menuButton2 = Page.GetByText("Counter");
         var menuButton23 = Page.GetByText("Weather");
+        var menuButton3 = Page.GetByText("People");
 
 
         // Expects page to have a heading with the name of Installation.
         await Expect(menuButton).ToBeVisibleAsync();
         await Expect(menuButton2).ToBeVisibleAsync();
         await Expect(menuButton23).ToBeVisibleAsync();
+        await Expect(menuButton3).ToBeVisibleAsync();
     }
 
     [Test]
@@ -78,5 +80,19 @@ public class Test : PageTest
 
 
 
+    }
+
+    [Test]
+    public async Task FormPeople()
+    {
+        await Page.GotoAsync("http://localhost:5000/");
+
+        // Click the get started link.
+        await Page.GetByText("People").ClickAsync();
+
+        await Page.GotoAsync("http://localhost:5000/people");
+
+        await Page.GetByRole(AriaRole.Textbox, new() { Name = "Name" }).IsVisibleAsync();
+        await Page.GetByRole(AriaRole.Textbox, new() { Name = "Email" }).IsVisibleAsync();
     }
 }
