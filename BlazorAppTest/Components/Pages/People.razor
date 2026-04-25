@@ -1,0 +1,32 @@
+﻿@page "/people"
+@attribute [StreamRendering]
+
+<PageTitle>People</PageTitle>
+
+<h1>People</h1>
+
+Name: <input type="text" name="" id="">
+<br>
+<br>
+Age:
+<Input:number></Input:number>
+<br>
+
+<button class="btn btn-primary">Add Person</button>
+
+
+
+@code {
+
+        
+
+    private class people()
+    {
+        public string? Name { get; set; }
+        public int Age { get; set; }
+
+
+      
+
+    }
+}
