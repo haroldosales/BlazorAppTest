@@ -94,5 +94,6 @@ public class Test : PageTest
 
         await Page.GetByRole(AriaRole.Textbox, new() { Name = "Name" }).IsVisibleAsync();
         await Page.GetByRole(AriaRole.Textbox, new() { Name = "Email" }).IsVisibleAsync();
+        await Page.GetByRole(AriaRole.Button, new() { Name = "Sublimit" }).IsVisibleAsync();
     }
 }
